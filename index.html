@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="bg-[#351E29] h-screen">
+        <div class="h-[10vh] flex justify-center items-center">
+            <h1 class="text-4xl mt-3 md:text-5xl lg:text-6xl xl:text-7xl text-[#F2F7F2] font-serif">Tic Tac
+                Toe</h1>
+        </div>
+        <div class="message hidden">
+            <h1 id="message" class="text-4xl md:text-6xl lg:text-7xl"></h1>
+        </div>
+        <div class="game w-4/5 md:w-4/6 lg:w-3/6 xl:w-2/5 bg-[#A49694] mx-auto mt-10 rounded-2xl">
+            <div class="flex justify-center">
+                <button id="start" class="btn">New Game</button>
+            </div>
+            <div class="grid grid-cols-3 gap-4 h-4/5 w-72 sm:w-96 md:w-[30rem] place-items-center p-4 mx-auto">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+            <div class="flex justify-center">
+                <button id="reset" class="btn">Reset</button>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
