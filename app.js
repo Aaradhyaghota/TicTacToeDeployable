@@ -34,6 +34,7 @@ resetbtn.addEventListener("click", () => {
     for (let box of boxes) {
         box.innerText = "";
     }
+    enableBoxes();
 });
 
 startbtn.addEventListener("click", () => {
