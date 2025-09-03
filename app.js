@@ -39,6 +39,7 @@ resetbtn.addEventListener("click", () => {
 
 startbtn.addEventListener("click", () => {
     messBox.classList.add('hidden');
+    resetbtn.disabled = false;
     for (let box of boxes) {
         box.innerText = "";
     }
@@ -90,6 +91,7 @@ const checkWinner = () => {
                 messHeading.innerText = `${pos1val} is winner`;
                 messBox.classList.remove('hidden');
                 disableBoxes();
+                resetbtn.disabled = true;
             }
         }
     }
