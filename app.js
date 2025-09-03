@@ -75,6 +75,7 @@ const checkDraw = () => {
         messHeading.innerText = "Match Over";
         messBox.classList.remove('hidden');
         disableBoxes();
+        resetbtn.disabled = true;
     }
     else return;
 }
